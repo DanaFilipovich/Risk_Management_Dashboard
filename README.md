@@ -7,8 +7,9 @@ This project demonstrates the process of aggregating and visualizing payment tra
 ## Workflow Overview
 
 1. **Data Extraction (SQL)**:
-   - SQL queries are used to extract raw transaction data from a database (with more than 12 million records).
+   - SQL queries are used to extract raw transaction data from a database. 3 tables (Aydien, Checkout and Chargebacks&Refunds) with more than 12 million records).
    - Data includes transaction IDs, amounts, fraud labels, and other relevant features.
+   - The first steps in processing and systematizing data have been taken
    - Queries were designed to filter out any sensitive data and maintain confidentiality.
 
 2. **Data Modification (Python)**:
@@ -23,7 +24,7 @@ This project demonstrates the process of aggregating and visualizing payment tra
 ## Files in this Repository
 
 - **`sql_queries.sql`**: SQL queries used to extract transaction data from the source database (without sensitive information).
-- **`data_processing.ipynb`**: Python code to process and modify the data, including synthetic data generation and transformation.
+- **`data_processing.py`**: Python code to process and modify the data, including synthetic data generation and transformation.
 - **`requirements.txt`**: A list of required Python packages for the project.
 
   

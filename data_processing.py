@@ -1,6 +1,4 @@
 """
-generate_synthetic_data.py
-
 This script modifies the exported transaction dataset to create a synthetic version
 for demo purposes. It replaces sensitive values, generates randomized metrics,
 and ensures anonymization of key fields.

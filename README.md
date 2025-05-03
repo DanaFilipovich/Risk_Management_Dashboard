@@ -23,3 +23,5 @@ This project demonstrates the process of aggregating and visualizing payment tra
 - **`sql_queries.sql`**: SQL queries used to extract transaction data from the source database (without sensitive information).
 - **`data_processing.ipynb`**: Python code to process and modify the data, including synthetic data generation and transformation.
 - **`requirements.txt`**: A list of required Python packages for the project.
+
+  📘 Full project description is available [here](https://www.notion.so/Risk-Management-Dashboard-1e7ed80500f880bfbc6bf1d258c6aa8c?pvs=4).

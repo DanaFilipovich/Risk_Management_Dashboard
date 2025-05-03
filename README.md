@@ -1,6 +1,7 @@
 # Risk_Management_Dashboard
 
 This project demonstrates the process of aggregating and visualizing payment transaction data to monitor fraud activities. The workflow involves extracting real production data through SQL queries, modifying and processing the data in Python, and visualizing the results using a dashboard.
+
 📘 Full project description is available [here](https://www.notion.so/Risk-Management-Dashboard-1e7ed80500f880bfbc6bf1d258c6aa8c?pvs=4).
 
 ## Workflow Overview

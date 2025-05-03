@@ -1,30 +1,41 @@
-# Risk_Management_Dashboard
+# 🛡️ Risk Management Dashboard
 
-This project demonstrates the process of aggregating and visualizing payment transaction data to monitor fraud activities. The workflow involves extracting real production data through SQL queries, modifying and processing the data in Python, and visualizing the results using a dashboard.
+This project demonstrates the process of aggregating and visualizing payment transaction data to monitor fraud activities. The workflow includes extracting real production data through SQL queries, modifying and processing the data in Python, and visualizing the results using a dashboard.
 
-📘 Full project description is available [here](https://www.notion.so/Risk-Management-Dashboard-1e7ed80500f880bfbc6bf1d258c6aa8c?pvs=4).
+📘 **Full project description is available [here](https://www.notion.so/Risk-Management-Dashboard-1e7ed80500f880bfbc6bf1d258c6aa8c?pvs=4).**
 
-## Workflow Overview
+---
 
-1. **Data Extraction (SQL)**:
-   - SQL queries are used to extract raw transaction data from a database. 3 tables (Aydien, Checkout and Chargebacks&Refunds) with more than 12 million records).
-   - Data includes transaction IDs, amounts, fraud labels, and other relevant features.
-   - The first steps in processing and systematizing data have been taken
-   - Queries were designed to filter out any sensitive data and maintain confidentiality.
+## 📊 Workflow Overview
 
-2. **Data Modification (Python)**:
-   - The extracted data is processed and modified in Python using libraries like Pandas and NumPy.
-   - This includes cleaning, transforming, and generating synthetic fraud labels based on the data structure.
-   - The processed data is used for further analysis and visualization.
+### 1. Data Extraction (SQL)
+- SQL queries are used to extract raw transaction data from Snowflake.
+- Data was retrieved from **3 large tables** (Adyen, Checkout, Chargebacks & Refunds), each containing **12M+ records** since 2022.
+- Queries include information such as transaction IDs, amounts, fraud labels, BINs, currencies, and user behavior signals.
+- Data was filtered and structured daily.
+- Sensitive table and field names were removed for this version.
 
-3. **Fraud Analysis and Dashboard**:
-   - The modified data is visualized in a **risk management dashboard**, which helps monitor fraud patterns, approval rates, chargebacks, and other key metrics.
-   - A sample version of the dashboard can be viewed [here](https://public.tableau.com/views/RiskManagement_17461912652520/Summary?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link).
+### 2. Data Modification (Python)
+- Extracted data is processed using **Pandas** and **NumPy**.
+- Includes value transformations, synthetic fraud label generation, and randomization for safe public sharing.
+- Data was simplified to focus on 6 countries, 6 currencies, and data starting from 2024 to make demonstration easier.
 
-## Files in this Repository
+### 3. Fraud Analysis & Dashboard
+- Final dataset is visualized in a **Tableau Public** dashboard.
+- Metrics include fraud rates, blocked transaction volume, approval rates, chargebacks, refunds, and more.
+- Filtering added to explore attack behavior separately and analyze trends without fraud impact.
 
-- **`sql_queries.sql`**: SQL queries used to extract transaction data from the source database (without sensitive information).
-- **`data_processing.py`**: Python code to process and modify the data, including synthetic data generation and transformation.
-- **`requirements.txt`**: A list of required Python packages for the project.
+🔗 **[View the dashboard](https://public.tableau.com/views/RiskManagement_17461912652520/Summary)**
 
+---
+
+## 📁 Files in this Repository
+
+- `sql_queries.sql`: SQL queries used for extracting and aggregating transaction data.
+- `data_processing.py`: Python script for data transformation and synthetic dataset generation.
+- `requirements.txt`: List of required Python libraries.
+
+---
+
+💡 _This project automates what was previously done manually in Excel, helping scale fraud monitoring and reduce operational workload._
   
